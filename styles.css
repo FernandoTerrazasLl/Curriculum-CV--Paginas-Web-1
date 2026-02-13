@@ -1,3 +1,5 @@
+/* TODOS LOS COMANDOS PARA ALINEAR FUERON HECHOS CON IA, ENTENDI HTML Y COLORES PERO
+CENTRAR VERTICAL Y HORIZONTALMENTE TODAVIA NO */
 body{
     margin:0;
     font-family: "Microsoft Sans Serif", system-ui, Arial, sans-serif;
@@ -86,19 +88,50 @@ h1{
     color: #fff;
 }
 
-#about__profile-photo{
-    width: 544px;
-    height: 800px;
-    aspect-ratio: 17/25;
+.about-content{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    padding:40px 80px;
+    max-width:1100px;
+    margin: 0 auto;  
+}
+.about-content img#about__profile-photo{
+    width:360px;
+    height:auto;
+    border-radius:6px;
+}
+.about-text{ 
+    max-width:620px; 
+}
+#about__title{
+    font-size:32px;
+    color:#000;
+    text-align:center;
+    margin-top:24px;
+    margin-bottom:18px;
+}
+.about-text p{ 
+    color:#222; background:#fff; padding:18px; border-radius:6px; font-size:20px; line-height:1.5; 
 }
 
-#about__description{
-    width: 733px;
-    height: 386px;
-    color: #000;
-    font-family: "Microsoft Sans Serif";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+#about__profile-photo{ 
+    width:360px;
+    height:auto;
 }
+
+/* PROJECTS section styles */
+#projects{ padding:40px 20px 80px 20px; background:transparent; color:#000; }
+#projects h2{ text-align:center; font-size:34px; text-decoration:underline; margin-bottom:8px; }
+#projects p{ text-align:center; color:#222; margin-bottom:28px; }
+
+.projects-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:28px; max-width:1100px; margin: 0 auto 28px auto; }
+.project-card{ background:#fff; border-radius:12px; box-shadow:0 8px 18px rgba(0,0,0,0.08); overflow:hidden; display:flex; flex-direction:column; align-items:stretch; }
+.project-card img{ width:100%; height:220px; object-fit:cover; display:block; }
+.project-card .card-body{ padding:14px; text-align:center; color:#111; }
+.project-card .card-body h4{ margin:8px 0; font-size:16px; }
+.project-card .card-body p{ margin:6px 0; color:#444; }
+
+.projects-cta{ display:flex; justify-content:center; margin-top:18px; }
+.projects-cta a{ display:inline-block; background:#4983F0; color:#fff; padding:12px 26px; border-radius:30px; text-decoration:none; box-shadow:0 6px 18px rgba(73,131,240,0.25); }
+
